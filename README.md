@@ -2,7 +2,7 @@
 
 # geoMapas
 
-Modificacion de GeoJson en ESPAÑOL [Simple GeoJSON Editor](https://google-developers.appspot.com/maps/documentation/utils/geojson/).
+Modificacion de GeoJson en ESPAÑOL de Google : [Simple GeoJSON Editor](https://google-developers.appspot.com/maps/documentation/utils/geojson/).
 version primaria .
 
 
