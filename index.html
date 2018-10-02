@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GeoJSON editor</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link href="css/min/styles.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div id="panel" style="display: block;">
+        <div id="panel-content">
+            <div id="panel-title">GeoJSON editor</div>
+            <a href="https://github.com/tomscholz/geojson-editor">View on Github</a>
+            <hr/>
+            <div id="geojson-controls">
+                <button onclick="document.getElementById('geojson-input').select();">Select All</button>
+                <a id="download-link" href="data:;base64," download="geojson.json">
+                    <button>Download</button>
+                </a>
+            </div>
+            <textarea id="geojson-input" placeholder="Drag and drop GeoJSON onto the map or paste it here to begin editing."></textarea>
+        </div>
+    </div>
+    <button style="position: absolute; left:55%; top:1%; z-index: 10000;" onclick="panelToggle();">Toggle Panel</button>
+    <div id="map-container" style="width: 64.9%;">
+        <div id="map-holder"></div>
+        <div id="drop-container">
+            <div id="drop-silhouette"></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLW6rxS6R6aCGt16qCBq99SDIR3FwjO9M"></script>
+    <script type="text/javascript" src="js/min/editor.min.js"></script>
+</body>
+
+</html>
