@@ -11,10 +11,10 @@ function init() {
     // Initialise the map.
     map = new google.maps.Map(document.getElementById('map-holder'), {
         center: {
-            lat: 53.5547142,
-            lng: 9.9689018
+            lat: -65.0000000,
+            lng: -17.0000000
         },
-        zoom: 16
+        zoom: 5
     });
     map.data.setControls(['Point', 'LineString', 'Polygon']);
     map.data.setStyle({
