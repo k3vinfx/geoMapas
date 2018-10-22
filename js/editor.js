@@ -6,6 +6,7 @@ var dropContainer;
 var panel;
 var geoJsonInput;
 var downloadLink;
+var myFunction;
 
 function init() {
     // Initialise the map.
@@ -205,6 +206,20 @@ function panelToggle() {
     changeWidth('map-container');
     resizeMap(map);
 }
+
+function myFunction() {
+  /* Get the text field */
+  var copyText = document.getElementById("myInput");
+
+  /* Select the text field */
+  copyText.select();
+
+  /* Copy the text inside the text field */
+  document.execCommand("copy");
+
+  /* Alert the copied text */
+  alert("Copied the text: " + copyText.value);
+} 
 
 // Alert on unload
 window.onbeforeunload = function() {
