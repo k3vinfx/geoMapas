@@ -6,6 +6,17 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link href="css/min/styles.min.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	    <script>
+		$(document).ready(function(){
+		$("#btncopiar").click(function(){
+		$("#geojson-input").select();
+		document.execCommand('copy');
+		});
+		});
+	   </script>
+	
+	
 </head>
 
 <body>
@@ -13,16 +24,15 @@
         <div id="panel-content">
             <div id="panel-title" >>> INE GeoJSON editor << </div>
   
-            <div id="geojson-controls">
-                <button onclick="document.getElementById('geojson-input').select();">Selecionar todo</button>
+<div id="geojson-controls">
 
-                    <button onclick="myFunction();">Continuar</button>
+<button id="btncopiar">Guardar en celular</button>
+               
                     
-                    
-                </a>
+          
                 
-            </div>
-            <textarea id="geojson-input" placeholder="Copie y pege sus datos GeoJSON para poder editar.."></textarea>
+   </div>
+ <textarea id="geojson-input" placeholder="Copie y pege sus datos GeoJSON para poder editar."></textarea>
         </div>
     </div>
     <button style="position: absolute; left:55%; top:10%; z-index: 10000;" onclick="panelToggle();">Abrir Edicion</button>
