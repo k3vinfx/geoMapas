@@ -209,7 +209,7 @@ function panelToggle() {
 
 function myFunction() {
   /* Get the text field */
-  var copyText = document.getElementById("myInput");
+  var copyText = document.getElementById("geojson-input");
 
   /* Select the text field */
   copyText.select();
